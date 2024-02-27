@@ -1,0 +1,30 @@
+<!DOCTYPE >
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css"/>
+    </head>
+    <body>
+        <h1>Задание 3</h1>
+        <form>
+            
+            <label for="depositType">Выберите вид вклада:</label>
+            <select id="depositType" name="depositType" onclick="showData()">
+                <option value="replenishable">Пополняемый</option>
+                <option value="time">Срочный</option>
+            </select>
+            
+                <label for="depositTerm">Выберите срок вклада:</label>
+                <select id="depositTerm" name="depositTerm" >
+                    <!-- Опции для сроков вклада будут добавлены динамически при выборе вида вклада -->
+                </select>
+            
+                <input type="text" id="depositAmount" name="depositAmount" placeholder="Сумма, руб">
+            
+            <button type="button" onclick="calculateDeposit()">Рассчитать</button>
+        </form>
+
+        <p id="resultMessage"></p>
+
+        <script src="../scripts/script.js"></script>
+    </body>
+</html>
