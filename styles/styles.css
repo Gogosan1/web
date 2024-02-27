@@ -1,0 +1,38 @@
+.studients__container {
+    display: flex;
+    flex-direction: column;
+   width: 100%;
+}
+
+.text__space__between {
+    display: flex;
+    justify-content: space-between;
+}
+.main__container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    /*grid-template-columns: 1200px;*/
+}
+
+img {
+    margin: 3% auto;
+    max-width: 100%;
+}
+
+.otchet {
+    margin: 0 20%;
+}
+
+.content__container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.li_none{
+    list-style-type: none;
+}
+.text__center__container {
+    text-align: center;
+}
