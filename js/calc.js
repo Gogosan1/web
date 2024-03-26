@@ -31,11 +31,9 @@ function calculateDeposit(){
     const selectedTerm = parseInt(depositTerm.value);
     let totalAmount = depositAmount;
     let year = parseInt(depositTerm.value);
-    while (year > 0)
-    {
-        totalAmount += totalAmount * (annualInterestRate[selectedTerm]);
-        year -= 12;
-    }
+
+    totalAmount = totalAmount * (annualInterestRate[selectedTerm])/12*year + totalAmount;
+    
     
     
     document.getElementById("resultMessage").innerText = `Выбран вид вклада: ${deposType}, срок вклада: ${deposTerm}, сумма вклада: ${depositAmount} руб. В конце срока сумма составит: ${totalAmount.toFixed(2)} руб.`;
