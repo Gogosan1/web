@@ -19,6 +19,9 @@
 {
     background-color: aqua;
 }
+body {
+    background-color:yellowgreen;
+}
 .slider{
     max-width: 50%;
     margin: 0 auto;
